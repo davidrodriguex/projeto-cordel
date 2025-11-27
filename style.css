@@ -1,0 +1,55 @@
+@charset "utf-8";
+@font-face {
+    font-family: cordel;
+    src: url(fontes/Blacky.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 130px;
+}
+header h1{
+    font-family: 'cordel';
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+header p{
+    padding: 20px;
+    font-size: 20px;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+}
+main section{
+    border: 1px solid black;
+    padding: 150px 50px 150px 50px;
+}
+main p{
+    font-family: "Shantell Sans", cursive;
+    font-size: 30px;
+}
+#parallax-1{
+    background-image: url(imagens/background001.jpg);
+    
+}
+#parallax-2{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

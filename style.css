@@ -10,6 +10,10 @@
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+html, body{
+    min-height: 100vh;
+    background-color: gray;
+}
 header{
     background: black url(imagens/header.jpg) repeat;
     background-size: contain;
@@ -20,8 +24,14 @@ header{
 #content{
     background-color: rgba(64, 64, 104, 0.322);
     backdrop-filter: blur(1px);
+    width: 50%;
     border-radius: 10px;
     padding-top: 10px;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
 }
 header h1{
     font-family: 'cordel';
@@ -32,20 +42,52 @@ header p{
     padding: 20px;
     font-size: 20px;
 }
-header a{
+header a, footer a{
     color: white;
 }
-header a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
-main{
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
+    line-height: 2.5em;
+    font-size: 30px;
+    
+}
+section p{
+    font-family: "Shantell Sans", cursive;
+}
+section.imagem > p{
+    background-color: rgba(64, 64, 104, 0.322);
+    backdrop-filter: blur(1px);
+    width: 400px;
+    border-radius: 10px;
+    padding:20px;
+}
+.normal {
     background-color: white;
 }
-main section{
-    border: 1px solid black;
-    padding: 150px 50px 150px 50px;
+.imagem{
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-main p{
-    font-family: "Shantell Sans", cursive;
-    font-size: 30px;
+#imagem-2{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
